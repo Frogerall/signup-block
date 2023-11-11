@@ -1,7 +1,5 @@
 # Sign-Up Form Component
 
-![Signup Block](signup-block.jpeg)
-
 ## Overview
 
 This repository contains a simple sign-up form component created using HTML and CSS. The purpose of this project is to showcase the implementation of a sign-up block, demonstrating the combination of HTML for structure and CSS for styling.
