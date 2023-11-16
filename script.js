@@ -41,11 +41,11 @@ function validateEmail(email, errorElement) {
 function validatePassword(password, errorElement) {
  if (password.value.length < 8) {
   password.style.outline = "1px red solid";
-  password.classList.add("error");
+  password.classList.add("error-second");
   errorElement.innerHTML = "Password must be at least 8 characters.";
   return false;
  } else {
-  password.classList.remove("error");
+  password.classList.remove("error-second");
   password.style.outline = "";
   errorElement.innerHTML = "";
   return true;

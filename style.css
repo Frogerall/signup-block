@@ -131,3 +131,8 @@ form span a {
  background-position-x: 95%;
  background-position-y: 50%;
 }
+.error-second {
+ background: url(images/icon-error.svg) no-repeat;
+ background-position-x: 90%;
+ background-position-y: 50%;
+}
