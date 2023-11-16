@@ -1,87 +1,113 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ line-height: 1.5;
+ font-family: "Poppins", sans-serif;
 }
 .container {
-  background-color: lightcoral;
-  color: white;
-  display: flex;
-  padding: 5em;
-  justify-content: center;
-  align-items: center;
-  gap: 2em;
-  margin: 1em;
-
-  max-width: 100%;
+ background: url(images/bg-intro-desktop.png);
+ color: white;
+ display: flex;
+ padding: 5em;
+ justify-content: center;
+ align-items: center;
+ gap: 2em;
+ margin: 0 auto;
+ max-width: 100%;
+ position: relative;
+}
+.container::after {
+ content: "";
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ top: 0;
+ left: 0;
+ z-index: -1;
+ background-color: hsl(0, 100%, 74%);
 }
 .container h1 {
-  font-weight: bold;
+ font-weight: bold;
 }
 .form-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.5em;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ gap: 0.5em;
 }
 .form-header {
-  background-color: darkblue;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 5px;
-  padding: 10px 20px;
+ background-color: darkblue;
+ color: white;
+ text-decoration: none;
+ text-align: center;
+ border-radius: 5px;
+ padding: 10px 20px;
 }
-
 form {
-  background-color: white;
-  border-radius: 5px;
-  padding: 1em 2em;
-  text-align: center;
+ background-color: white;
+ border-radius: 5px;
+ padding: 1em 2em;
+ text-align: center;
 }
 form input {
-  margin-top: 1em;
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: rgba(128, 128, 128, 0.349) solid 1px;
-  color: black;
+ margin-top: 1em;
+ width: 100%;
+ padding: 10px;
+ border-radius: 5px;
+ border: rgba(128, 128, 128, 0.349) solid 1px;
+ color: black;
 }
 form button {
-  color: white;
-  background-color: rgb(95, 189, 95);
-  border-radius: 5px;
-  padding: 10px 25px;
-  width: 100%;
-  border: none;
-  font-weight: bold;
-  margin-top: 1em;
+ color: white;
+ background-color: rgb(95, 189, 95);
+ border-radius: 5px;
+ padding: 10px 25px;
+ width: 100%;
+ border: none;
+ font-weight: bold;
+ margin-top: 1em;
 }
 form p {
-  color: rgb(109, 103, 103);
-  margin-top: 0.5em;
+ color: rgb(109, 103, 103);
+ margin-top: 0.5em;
+ font-size: 12px;
 }
 form span a {
-  color: lightcoral;
-  text-decoration: none;
-  font-weight: bold;
+ color: lightcoral;
+ text-decoration: none;
+ font-weight: bold;
+}
+.heading {
+ padding: 1rem;
+ max-width: 45ch;
+ text-align: center;
+}
+.heading p {
+ font-size: 14px;
 }
 @media (max-width: 600px) {
-  .container {
-    flex-direction: column;
-    width: 95%;
-    margin: 0 auto;
-    padding: 1em;
-  }
-  .form-wrap {
-    width: 100%;
-    padding: 0;
-  }
+ .container {
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1em;
+ }
+ .form-wrap {
+  width: 100%;
+  padding: 0;
+ }
 }
 @media (min-width: 601px) and (max-width: 653px) {
-  .container p {
-    font-size: 0.9em;
-  }
+ .container p {
+  font-size: 0.9em;
+ }
+}
+@media (min-width: 600px) {
+ .form-wrap {
+  max-width: 40%;
+ }
+ .heading {
+  text-align: left;
+ }
 }
