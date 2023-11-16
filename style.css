@@ -49,14 +49,17 @@ form {
  border-radius: 5px;
  padding: 1em 2em;
  text-align: center;
+ display: flex;
+ flex-direction: column;
+ gap: 0.5rem;
 }
 form input {
- margin-top: 1em;
  width: 100%;
  padding: 10px;
  border-radius: 5px;
  border: rgba(128, 128, 128, 0.349) solid 1px;
  color: black;
+ transition: all 0.3s ease-in-out;
 }
 form button {
  color: white;
@@ -67,6 +70,10 @@ form button {
  border: none;
  font-weight: bold;
  margin-top: 1em;
+ transition: all 0.3s ease-in-out;
+}
+form button:active {
+ opacity: 0.7;
 }
 form p {
  color: rgb(109, 103, 103);
@@ -110,4 +117,17 @@ form span a {
  .heading {
   text-align: left;
  }
+}
+.error-first,
+.error-last,
+.error-email,
+.error-password {
+ color: red;
+ font-size: 14px;
+ align-self: flex-end;
+}
+.error {
+ background: url(images/icon-error.svg) no-repeat;
+ background-position-x: 95%;
+ background-position-y: 50%;
 }
